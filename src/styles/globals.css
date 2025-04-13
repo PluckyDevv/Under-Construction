@@ -9,7 +9,7 @@ body {
 
 .background {
   background-color: #000;
-  @supports (--moz-appearance: none) {
+  @supports not (-moz-appearance: none) {
     background: linear-gradient(to bottom right, #000, #111);
   }
 }
