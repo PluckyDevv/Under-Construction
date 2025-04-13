@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { WrenchIcon } from "@lucide/astro";
+import "../styles/globals.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Under Construction 🚧</title>
+  </head>
+  <body class="background min-h-screen">
+    <main class="flex min-h-screen items-center justify-center">
+      <section class="max-w-lg p-4 text-center">
+        <WrenchIcon
+          size={48}
+          class="mx-auto mb-4 rounded-lg bg-amber-500/25 p-2 text-amber-500"
+        />
+        <h1 class="text-4xl font-bold tracking-tight text-white">
+          Under Construction
+        </h1>
+        <p class="mt-2 text-gray-300">
+          This website is currently under construction. We&apos;re working hard
+          to bring you something amazing. Please check back soon!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
