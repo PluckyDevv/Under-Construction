@@ -7,9 +7,28 @@ body {
   height: 100%;
 }
 
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 10s linear infinite;
+}
+
 .background {
   background-color: #000;
   @supports not (-moz-appearance: none) {
     background: linear-gradient(to bottom right, #000, #111);
+  }
+}
+
+.gradient {
+  @supports not (-moz-appearance: none) {
+    background: conic-gradient(#ffaa7c, #fff47c, #ff9257);
   }
 }
